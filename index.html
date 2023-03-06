@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -18,11 +18,11 @@
 		
 		.program { display: flex; }
 	
-	.day { display: flex; flex-direction: column; }
+	.day { display: flex; flex-direction: column; flex-basis: 200px; flex-grow: 1; }
 	
-	.col { flex: 1; padding: .5rem 0; text-align: center; background: #f1f5f6; margin: .5rem; display: flex; justify-content: center; align-items: center; flex-direction: column; font-size: 1rem; font-weight: 600; background: #f1f5f6; color: #333; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;  }
-	.col span { display: block; font-size: .8rem; font-weight: 300; margin-top: .2rem;   }
-	.col.head { background: #34495e; color: #fff; }
+	.hour { flex: 1; padding: .5rem; text-align: center; background: #f1f5f6; margin: .5rem; display: flex; justify-content: center; align-items: center; flex-direction: column; font-size: 1rem; font-weight: 600; background: #f1f5f6; color: #333; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;  }
+	.hour span { display: block; font-size: .8rem; font-weight: 300; margin-top: .2rem;   }
+	.hour.head { background: #34495e; color: #fff; }
 
 	.glossa { background: #3498db; color: #fff; }
 	.math { background: #1abc9c; color: #fff; }
@@ -34,25 +34,25 @@
 	.music { background: #d35400; color: #fff; }
 	.history { background: #fdcb6e; color: #fff; }
 	.computers { background: #e84393; color: #fff;}
+	.french { background: #ad2797; color: #fff;}
 	
 	
 	
-	a.col:hover { background: #34495e; color: #fff; box-shadow: 1px 1px 11px 0px rgba(50, 50, 50, 0.3); }
+	a.hour:hover { background: #34495e; color: #fff; box-shadow: 1px 1px 11px 0px rgba(50, 50, 50, 0.3); }
 	
-	.col.hour { position: static; }
+	.hour.hour { position: static; }
 	
 	@media (max-width: 600px) {
-		.col.hour { position: fixed; padding: .5rem;     width: calc(154px - 1rem); left: 0; height: calc(60px - 1rem);  }
-		.col.hour.head { height: calc(38px - 1rem);}
-		.row { padding-left: 170px; }
+		.day.first { position: fixed; left: 0; background-color: #fff; border: 1px solid #34495e;  }
+		.program { padding-left: 140px; }
 	}
 	
 
 	
 	@media (min-width: 1025px) {
 		body { padding: 1rem; }
-		.col { font-size: 1.5rem; padding: 1rem 0; margin: .5rem; }
-		.col span { font-size: 1rem; }
+		.hour { font-size: 1.5rem; padding: 1rem 0; margin: .5rem; }
+		.hour span { font-size: 1rem; }
 		
 	}
 	
@@ -62,7 +62,7 @@
 
     <body>
         <div class="program">
-			<div class="day">
+			<div class="day first">
 				<div class="hour head hour">E1</div>
 				<div class="hour hour">08:15 - 08:45</div>
 				<div class="hour hour">08:55 - 09:25</div>
@@ -74,32 +74,32 @@
 			
 			<div class="day">
 				<div class="hour head">ΔΕΥΤΕΡΑ</div>
-				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour glossa">ΓΛΩΣΣΑ</a>
-				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour glossa">ΓΛΩΣΣΑ</a>
-				<a href="https://minedu-primary.webex.com/meet/ledaleda" target="_blank" class="hour glossa">ΜΟΥΣΙΚΗ</a>
-				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour math">ΜΑΘΗΜΑΤΙΚΑ</a>
-				<a href="https://minedu-primary.webex.com/meet/karatzouni" target="_blank" class="hour glossa">ΑΓΓΛΙΚΑ</a>
-				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour glossa">ΙΣΤΟΡΙΑ</a>
+				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour glossa" title="ΚΑΡΑΓΙΑΝΝΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ">ΓΛΩΣΣΑ</a>
+				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour glossa" title="ΚΑΡΑΓΙΑΝΝΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ">ΓΛΩΣΣΑ</a>
+				<a href="https://minedu-primary.webex.com/meet/ledaleda" target="_blank" class="hour music" title="ΑΘΑΝΑΣΑΤΟΥ ΔΗΜΗΤΡΑ">ΜΟΥΣΙΚΗ</a>
+				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour math" title="ΚΑΡΑΓΙΑΝΝΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ">ΜΑΘΗΜΑΤΙΚΑ</a>
+				<a href="https://minedu-primary.webex.com/meet/karatzouni" target="_blank" class="hour english" title="ΚΑΡΑΤΖΟΥΝΗ ΕΛΕΝΗ">ΑΓΓΛΙΚΑ</a>
+				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour history" title="ΚΑΡΑΓΙΑΝΝΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ">ΙΣΤΟΡΙΑ</a>
 			</div>	
 
 			<div class="day">
 				<div class="hour head">ΤΡΙΤΗ</div>
-				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour glossa">ΓΛΩΣΣΑ</a>
-				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour glossa">ΓΛΩΣΣΑ</a>
-				<a href="https://minedu-primary.webex.com/meet/sstamatia" target="_blank" class="hour glossa">ΘΡΗΣΚΕΥΤΙΚΑ</a>
-				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour math">ΜΑΘΗΜΑΤΙΚΑ</a>
-				<a href="https://minedu-primary.webex.com/meet/istavria" target="_blank" class="hour math">ΓΥΜΝΑΣΤΙΚΗ</a>
-				<a href="https://minedu-primary.webex.com/meet/sstamatia" target="_blank" class="hour math">ΔΕΞΙΟΤΗΤΕΣ</a>
+				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour glossa" title="ΚΑΡΑΓΙΑΝΝΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ">ΓΛΩΣΣΑ</a>
+				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour glossa" title="ΚΑΡΑΓΙΑΝΝΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ">ΓΛΩΣΣΑ</a>
+				<a href="https://minedu-primary.webex.com/meet/sstamatia" target="_blank" class="hour computers" title="ΣΤΑΜΑΤΙΑΔΟΥ ΣΤΕΛΛΑ">ΘΡΗΣΚΕΥΤΙΚΑ</a>
+				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour math" title="ΚΑΡΑΓΙΑΝΝΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ">ΜΑΘΗΜΑΤΙΚΑ</a>
+				<a href="https://minedu-primary.webex.com/meet/istavria" target="_blank" class="hour gym" title="ΣΤΑΥΡΙΑΝΟΣ ΙΩΑΝΝΗΣ">ΓΥΜΝΑΣΤΙΚΗ</a>
+				<a href="https://minedu-primary.webex.com/meet/sstamatia" target="_blank" class="hour computers" title="ΣΤΑΜΑΤΙΑΔΟΥ ΣΤΕΛΛΑ">ΔΕΞΙΟΤΗΤΕΣ</a>
 			</div>		
 
 			<div class="day">
 				<div class="hour head">ΤΕΤΑΡΤΗ</div>
-				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour glossa">ΓΛΩΣΣΑ</a>
-				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour glossa">ΓΛΩΣΣΑ</a>
-				<a href="https://minedu-primary.webex.com/meet/katheodo" target="_blank" class="hour ">ΓΑΛΛΙΚΑ</a>
-				<a href="https://minedu-primary.webex.com/meet/katheodo" target="_blank" class="hour ">ΓΑΛΛΙΚΑ</a>
-				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour glossa">ΦΥΣΙΚΑ</a>
-				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour glossa">ΓΕΩΓΡΑΦΙΑ</a>
+				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour glossa" title="ΚΑΡΑΓΙΑΝΝΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ">ΓΛΩΣΣΑ</a>
+				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour glossa" title="ΚΑΡΑΓΙΑΝΝΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ">ΓΛΩΣΣΑ</a>
+				<a href="https://minedu-primary.webex.com/meet/katheodo" target="_blank" class="hour french" title="ΘΕΟΔΟΣΕΛΗ ΑΙΚΑΤΕΡΙΝΗ">ΓΑΛΛΙΚΑ</a>
+				<a href="https://minedu-primary.webex.com/meet/katheodo" target="_blank" class="hour french" title="ΘΕΟΔΟΣΕΛΗ ΑΙΚΑΤΕΡΙΝΗ">ΓΑΛΛΙΚΑ</a>
+				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour science" title="ΚΑΡΑΓΙΑΝΝΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ">ΦΥΣΙΚΑ</a>
+				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour science" title="ΚΑΡΑΓΙΑΝΝΗΣ ΚΩΝΣΤΑΝΤΙΝΟΣ">ΓΕΩΓΡΑΦΙΑ</a>
 			</div>		
 		</dv>
     </body>
