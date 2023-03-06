@@ -15,8 +15,10 @@
 	body { padding: 0; margin: 0; background: #fff; font-family: 'Open Sans'; }
 
 	a { display: block; text-decoration: none; } 
+		
+		.program { display: flex; }
 	
-	.row { display: flex; min-width: 850px; }
+	.day { display: flex; flex-direction: column; }
 	
 	.col { flex: 1; padding: .5rem 0; text-align: center; background: #f1f5f6; margin: .5rem; display: flex; justify-content: center; align-items: center; flex-direction: column; font-size: 1rem; font-weight: 600; background: #f1f5f6; color: #333; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;  }
 	.col span { display: block; font-size: .8rem; font-weight: 300; margin-top: .2rem;   }
@@ -59,46 +61,46 @@
 </head>
 
     <body>
-        
-			<div class="row">
-				<div class="col head hour">E1</div>
-				<div class="col hour">08:15 - 08:45</div>
-				<div class="col hour">08:55 - 09:25</div>
-				<div class="col hour">09:35 - 10:05</div>
-				<div class="col hour">10:15 - 10:45</div>
-				<div class="col hour">10:55 - 11:25</div>
-				<div class="col hour">11:35 - 12:05</div>
+        <div class="program">
+			<div class="day">
+				<div class="hour head hour">E1</div>
+				<div class="hour hour">08:15 - 08:45</div>
+				<div class="hour hour">08:55 - 09:25</div>
+				<div class="hour hour">09:35 - 10:05</div>
+				<div class="hour hour">10:15 - 10:45</div>
+				<div class="hour hour">10:55 - 11:25</div>
+				<div class="hour hour">11:35 - 12:05</div>
 			</div>
 			
-			<div class="row">
-				<div class="col head">ΔΕΥΤΕΡΑ</div>
-				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="col glossa">ΓΛΩΣΣΑ</a>
-				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="col glossa">ΓΛΩΣΣΑ</a>
-				<a href="https://minedu-primary.webex.com/meet/ledaleda" target="_blank" class="col glossa">ΜΟΥΣΙΚΗ</a>
-				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="col math">ΜΑΘΗΜΑΤΙΚΑ</a>
-				<a href="https://minedu-primary.webex.com/meet/karatzouni" target="_blank" class="col glossa">ΑΓΓΛΙΚΑ</a>
-				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="col glossa">ΙΣΤΟΡΙΑ</a>
+			<div class="day">
+				<div class="hour head">ΔΕΥΤΕΡΑ</div>
+				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour glossa">ΓΛΩΣΣΑ</a>
+				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour glossa">ΓΛΩΣΣΑ</a>
+				<a href="https://minedu-primary.webex.com/meet/ledaleda" target="_blank" class="hour glossa">ΜΟΥΣΙΚΗ</a>
+				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour math">ΜΑΘΗΜΑΤΙΚΑ</a>
+				<a href="https://minedu-primary.webex.com/meet/karatzouni" target="_blank" class="hour glossa">ΑΓΓΛΙΚΑ</a>
+				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour glossa">ΙΣΤΟΡΙΑ</a>
 			</div>	
 
-			<div class="row">
-				<div class="col head">ΤΡΙΤΗ</div>
-				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="col glossa">ΓΛΩΣΣΑ</a>
-				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="col glossa">ΓΛΩΣΣΑ</a>
-				<a href="https://minedu-primary.webex.com/meet/sstamatia" target="_blank" class="col glossa">ΘΡΗΣΚΕΥΤΙΚΑ</a>
-				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="col math">ΜΑΘΗΜΑΤΙΚΑ</a>
-				<a href="https://minedu-primary.webex.com/meet/istavria" target="_blank" class="col math">ΓΥΜΝΑΣΤΙΚΗ</a>
-				<a href="https://minedu-primary.webex.com/meet/sstamatia" target="_blank" class="col math">ΔΕΞΙΟΤΗΤΕΣ</a>
+			<div class="day">
+				<div class="hour head">ΤΡΙΤΗ</div>
+				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour glossa">ΓΛΩΣΣΑ</a>
+				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour glossa">ΓΛΩΣΣΑ</a>
+				<a href="https://minedu-primary.webex.com/meet/sstamatia" target="_blank" class="hour glossa">ΘΡΗΣΚΕΥΤΙΚΑ</a>
+				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour math">ΜΑΘΗΜΑΤΙΚΑ</a>
+				<a href="https://minedu-primary.webex.com/meet/istavria" target="_blank" class="hour math">ΓΥΜΝΑΣΤΙΚΗ</a>
+				<a href="https://minedu-primary.webex.com/meet/sstamatia" target="_blank" class="hour math">ΔΕΞΙΟΤΗΤΕΣ</a>
 			</div>		
 
-			<div class="row">
-				<div class="col head">ΤΕΤΑΡΤΗ</div>
-				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="col glossa">ΓΛΩΣΣΑ</a>
-				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="col glossa">ΓΛΩΣΣΑ</a>
-				<a href="https://minedu-primary.webex.com/meet/katheodo" target="_blank" class="col ">ΓΑΛΛΙΚΑ</a>
-				<a href="https://minedu-primary.webex.com/meet/katheodo" target="_blank" class="col ">ΓΑΛΛΙΚΑ</a>
-				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="col glossa">ΦΥΣΙΚΑ</a>
-				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="col glossa">ΓΕΩΓΡΑΦΙΑ</a>
+			<div class="day">
+				<div class="hour head">ΤΕΤΑΡΤΗ</div>
+				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour glossa">ΓΛΩΣΣΑ</a>
+				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour glossa">ΓΛΩΣΣΑ</a>
+				<a href="https://minedu-primary.webex.com/meet/katheodo" target="_blank" class="hour ">ΓΑΛΛΙΚΑ</a>
+				<a href="https://minedu-primary.webex.com/meet/katheodo" target="_blank" class="hour ">ΓΑΛΛΙΚΑ</a>
+				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour glossa">ΦΥΣΙΚΑ</a>
+				<a href="https://minedu-primary.webex.com/meet/kara1964" target="_blank" class="hour glossa">ΓΕΩΓΡΑΦΙΑ</a>
 			</div>		
-	
+		</dv>
     </body>
 </html>
